@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button >
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span style="margin-right: 65%;">APP STM</span>
+
+        <div class="list-container">
+            <ul >
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" [routerLink]="['/login']">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                        <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign Out
+                        </button>
+                        <button mat-menu-item>Item 2</button>
+                        </mat-menu>
+                </li>
+                <li>
+                    <button mat-icon-button [routerLink]="['/employe']">
+                        <mat-icon>assignment_ind</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>dashboard</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
